@@ -81,7 +81,7 @@ const sizes: Size[] = [
   { name: "XL", multiplier: 1.8 },
 ];
 
-export default function App() {
+export default function App(): React.JSX.Element {
   const [selectedPizza, setSelectedPizza] = useState<Pizza>(pizzas[0]);
   const [selectedSize, setSelectedSize] = useState<Size>(sizes[0]);
   const [selectedToppings, setSelectedToppings] = useState<Topping[]>([]);
