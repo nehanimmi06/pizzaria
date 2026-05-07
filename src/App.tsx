@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+ import { useMemo, useState } from "react";
 
 type Pizza = {
   id: number;
@@ -81,7 +81,7 @@ const sizes: Size[] = [
   { name: "XL", multiplier: 1.8 },
 ];
 
-export default function App(): JSX.Element {
+export default function App() {
   const [selectedPizza, setSelectedPizza] = useState<Pizza>(pizzas[0]);
   const [selectedSize, setSelectedSize] = useState<Size>(sizes[0]);
   const [selectedToppings, setSelectedToppings] = useState<Topping[]>([]);
